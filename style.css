@@ -31,26 +31,40 @@ p {
 }
 
 .skill {
-    background-color: rgb(116, 194, 92);
+    background-color: #ff9a00;
     color: white;
     padding: 1%;
     text-align: right;
     font-size: 20px;
     border-radius: 15px;
+    position: relative;
+    animation: mymove 5s infinite;
 }
 
 .html {
     width: 80%;
 }
 
-.php {
-    width: 60%;
+.ill {
+    width: 45%;
+}
+
+.photo {
+    width: 50%;
+}
+
+.site {
+    width: 35%;
+}
+
+.git {
+    width: 40%;
 }
 
 
 /* original */
 
-:root {
+ :root {
     --background: #e1ebe8;
     --hover: #BDA243;
     --black: #1a2421;
@@ -63,6 +77,13 @@ p {
 
 
 /*https://fonts.google.com/specimen/Nunito*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* https://css-tricks.com/need-to-scroll-to-the-top-of-the-page/ */
 
 body {
     margin: 0;
@@ -178,6 +199,38 @@ h3 {
     font-family: menufont;
     font-size: 25px;
     margin-left: 1rem;
+}
+
+.animation {
+    color: var(--black);
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+}
+
+@keyframes example {
+    0% {
+        color: #1d7445;
+    }
+    5% {
+        color: #72a99c;
+    }
+    25% {
+        color: #A6A508;
+    }
+    45% {
+        color: #ff9a00;
+    }
+    65% {
+        color: #f5b9ae
+    }
+    85% {
+        color: #9d4399;
+    }
+    100% {
+        color: #1d7445;
+    }
 }
 
 .vejfinder {
@@ -504,6 +557,82 @@ ul {
     width: 10%;
 }
 
+.nederste-link {
+    width: 80%;
+    position: relative;
+    display: block;
+    margin-top: 10%;
+    font-family: menufont;
+    color: var(--black);
+    margin-left: 2rem;
+    margin-bottom: 5%;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_arrows.asp */
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.top {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: var(--black);
+    line-height: 100px;
+    text-align: center;
+    background: #000;
+    text-shadow: 0 1px 0 #ff9a00;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #000;
+    background: #cccbbb;
+    opacity: 0.95;
+    margin-top: 2em;
+}
+
+
+/* https://bryanhadaway.com/how-to-create-circles-with-css/ */
+
+.inset:hover {
+    color: #eee;
+    text-shadow: 0 0 1px #666;
+    text-decoration: none;
+    box-shadow: 0 0 4px #222 inset;
+    opacity: 1
+}
+
+
+/*https://www.kindacode.com/article/css-circle-button-examples/*/
+
+.top:hover {
+    background-color: #1d7445;
+    color: #eee;
+}
+
+.links {
+    font-family: menufont;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
 footer {
     background-color: #B6E4D0;
     margin-top: auto;
@@ -566,6 +695,10 @@ footer {
         font-family: menufont;
         font-size: 25px;
     }
+    .links {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 
@@ -617,10 +750,6 @@ footer {
         display: block;
     }
     .dropbtn {
-        background-color: var(--background);
-    }
-    .navlinks :hover,
-    .dropdown:hover .dropbtn {
         background-color: var(--background);
     }
     .navlinks {
@@ -777,6 +906,26 @@ footer {
     .kontaktside {
         width: 70%;
         margin-left: 20rem;
+    }
+    .links {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .links:hover,
+    #links:focus {
+        color: #1d7445;
+    }
+    .links:hover:before,
+    .links:hover:after,
+    .links:focus:before,
+    .links:focus:after {
+        background: #1d7445;
+    }
+    .top {
+        margin-left: 6rem;
+    }
+    footer {
+        text-align: center;
     }
     .insta {
         width: 5%;
