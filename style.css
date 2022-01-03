@@ -344,14 +344,18 @@ h3 {
 }
 
 .tegning {
-    width: 70%;
+    width: 80%;
     border-radius: 20px;
-    margin-left: 4rem;
     margin-bottom: 2rem;
     box-shadow: 0 15px 20px rgb(0 0 0 / 0.2);
 }
 
 .overom {
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
+
+.overome {
     margin-left: 4rem;
     margin-top: 5rem;
 }
@@ -364,8 +368,8 @@ h3 {
     margin: 1rem;
     margin-top: 4rem;
     padding-left: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 2px;
+    padding-top: 2px;
     box-shadow: 0 15px 20px rgb(0 0 0 / 0.2);
     font-family: menufont;
     color: var(--black);
@@ -430,7 +434,7 @@ h3 {
 
 .telefon {
     float: right;
-    width: 40%;
+    width: 45%;
     margin: 3rem;
     border-radius: 20px;
 }
@@ -551,6 +555,7 @@ ul {
     display: inline-block;
     font-family: menufont;
     box-shadow: 0 15px 20px rgb(0 0 0 / 0.2);
+    margin-right: 20px;
 }
 
 .somelogo {
@@ -605,6 +610,8 @@ ul {
     background: #cccbbb;
     opacity: 0.95;
     margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -627,10 +634,18 @@ ul {
 }
 
 .links {
-    font-family: menufont;
-    text-decoration: none;
+    border-radius: 20px;
+    background-color: #ff9a00;
     color: var(--black);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: menufont;
     font-weight: bold;
+    box-shadow: 0 15px 20px rgb(0 0 0 / 0.2);
+    margin-right: 20px;
+    margin-bottom: 2em;
 }
 
 footer {
@@ -762,6 +777,27 @@ footer {
     .ux {
         font-size: 30px;
     }
+    .link {
+        width: 40%;
+        padding: 20px 25px;
+        font-size: 18px;
+    }
+    /*https://www.kindacode.com/article/css-circle-button-examples/*/
+    .link:hover {
+        background-color: var(--hover);
+        -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+        /* Safari 3-8 */
+        transform: scale(1.1);
+        font-size: 100%;
+    }
+    .inball {
+        margin-top: 1em;
+    }
+    .inso {
+        margin-top: 4em;
+    }
     .openarms {
         margin-top: 3rem;
         margin-left: 0;
@@ -769,6 +805,24 @@ footer {
         width: 40%;
         border-radius: 20px;
         box-shadow: 0 15px 20px rgb(0 0 0 / 0.2);
+        transition: 0.70s;
+        -webkit-transition: 0.70s;
+        -moz-transition: 0.70s;
+        -ms-transition: 0.70s;
+        -o-transition: 0.70s;
+    }
+    /* https://codepen.io/ImageHoverEffects/pen/GfJLg */
+    .openarms:hover {
+        transition: 0.70s;
+        -webkit-transition: 0.70s;
+        -moz-transition: 0.70s;
+        -ms-transition: 0.70s;
+        -o-transition: 0.70s;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
     .afslutning {
         text-align: center;
@@ -802,27 +856,13 @@ footer {
         border-radius: 20px;
         box-shadow: 0 15px 35px rgb(0 0 0 / 0.2);
     }
-    .link {
-        width: 90%;
-        padding: 20px 25px;
-        font-size: 22px;
-    }
     .kort-container {
         display: flex;
         justify-content: center;
     }
     .tegning {
-        width: 40%;
-    }
-    .kompetencer {
-        margin-right: 10rem;
-        margin-left: 10rem;
-        font-weight: bold;
-    }
-    .kompetencerover {
-        margin-right: 17rem;
-        margin-left: 10rem;
-        font-weight: bold;
+        max-width: 40%;
+        align-self: center;
     }
     .ommigp {
         width: 50%;
@@ -836,6 +876,10 @@ footer {
     .overom {
         font-size: 45px;
     }
+    .overome {
+        font-size: 45px;
+        margin-left: 24rem;
+    }
     .tekstbokse {
         width: 40%;
         border-radius: 20px;
@@ -844,8 +888,8 @@ footer {
         margin: 1rem;
         margin-top: 4rem;
         padding-left: 2rem;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
         box-shadow: 0 15px 20px rgb(0 0 0 / 0.2);
         font-size: 25px;
     }
@@ -922,7 +966,8 @@ footer {
         background: #1d7445;
     }
     .top {
-        margin-left: 6rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     footer {
         text-align: center;
